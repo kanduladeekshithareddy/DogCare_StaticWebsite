@@ -1,0 +1,315 @@
+ body{
+    margin:0px;
+    padding:0px;
+}
+/*.nav-bar{
+    background-color: rgb(247, 245, 246);
+    justify-content: right;
+    align-items: center;
+}
+.nav-bar ul{
+  overflow:auto;
+}
+.nav-bar li{
+  list-style-type: none;
+  padding: 2%;
+  float:left;
+  margin: 3px 3px;
+}
+.nav-bar li a{
+    font-size:x-large;
+    font-family:monospace;
+    justify-content:left;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+} 
+#fhom{
+    padding-left: 10%;
+} */
+.navbar-container{
+  background-color:rgb(247, 245, 246);
+  /* color:white; */
+  padding:2rem;
+  margin:0px;
+  width:100%;
+}
+.navbar-links{
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 10%;
+}
+.navbar-brand{
+  position: absolute;
+  top: -18%;
+  height: 52%;
+  width: 14%;
+}
+.navbar-links a{
+  padding:1.5rem;
+  text-decoration: none;
+  color:black;
+  /* border:solid pink; */
+  padding-bottom: 1rem;
+  /* border: */
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-size: medium; */
+}
+.navbar-links a:hover{
+  border-bottom: 3px solid #1f1612;
+}
+.brand img{
+    width: 9.35rem;
+    top:0px;
+    position:fixed;
+    margin: 1%;
+    height:3.50rem;
+    /* margin-left:11%; */
+    position: absolute;
+    z-index: 1;
+}
+.brand img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.7);
+  }
+  
+  .brand img:hover {
+    transform: scale(1.2); /* Increase scale value to zoom in (e.g., 1.2 for 20% zoom) */
+  }
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font.woff2/') format('woff2'),
+         url('design/mofont.woff') format('woff');
+    /* Add additional formats and font weights if available */
+  }
+.home{
+    position: relative;
+  }
+  
+  .home img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; 
+  }
+  
+  .hocon {
+    position: absolute;
+    text-align: center;
+    margin-bottom: 0px;
+    top:18%;
+    left:25%;
+  }
+
+  #head{
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      margin-bottom: 0px;
+      padding-left: 2%;
+      margin-top:15% ;
+      font-size:6.25rem;
+      font-family: 'CustomFont';
+      color:rgb(255, 146, 78);
+      letter-spacing: 10px;
+  }
+  #mid{
+      margin-top:1%;
+      font-size:x-large;
+      color:rgb(243, 253, 184);
+      font-family:fantasy;
+      font-style: italic;
+  }
+  
+  #tag{
+      margin-top:1%;
+      font-size:2.25rem;
+      color:rgb(255, 255, 255);
+      font-family:monospace;
+      font-weight: 600;
+  }
+  .search{
+    position:relative;
+    background-color:antiquewhite;
+  }
+  .empty img{
+    position: relative;
+    width: 55%;
+    left: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 1%;
+  }
+  .empty p{
+    position:absolute;
+    padding: 5%;
+    top:13%;
+    margin-top:4%;
+    margin-left:0%;
+    margin-bottom:30%;
+    margin-right:53%;
+    text-align: center;
+    font-family:monospace;
+    font-style: oblique;
+    font-variant: initial;
+    font-stretch: expanded ;
+    font-size: larger;
+  }
+  .empty h5{
+    position:absolute;
+    padding:15px;
+    top:43%;
+    left:15%;
+    text-align: center;
+    background-color:darkgreen;
+    color: aquamarine;
+    border-radius: 10px;
+  }
+  .empty h1{
+    position:absolute;
+    padding: 5%;
+    top:13%;
+    text-align: center;
+    font-family:monospace;
+    font-style: oblique;
+    font-variant: initial;
+    font-stretch: expanded ;
+    font-size:xx-large;
+  }
+  
+  .empty button{
+    position:absolute;
+    top:63%;
+    left:14%;
+    rotate:90 deg;
+    border: 0px;
+    border-radius: 5%;
+  }
+  .box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  .bsearch img{
+    width:100%;
+    height:50%;
+  }
+  .background-section {
+    position: relative;
+    background-image: url('images/white-dog.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .content p{
+    margin-top:15%;
+    margin-left:18%;
+    font-family: monospace;
+    font-size: 1.35rem;
+    font-weight: 300;
+    font-style: italic;
+    /* text-align: center; */
+  }
+  .content input{
+    margin-top:10%;
+    margin-left:25%;
+    border:0px;
+    box-shadow: #262626;
+    border-radius: 5px;
+    padding: 1%;
+  }
+  .about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.a-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.a-content{
+  background-color: #69aaf0;
+  padding:3%;
+  border-radius: 5px;
+  margin:20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+footer{
+    background-color: #909090;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
